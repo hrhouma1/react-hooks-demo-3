@@ -1,0 +1,271 @@
+/* Styles professionnels inspirés de LinkedIn - Design pédagogique */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f3f2ef;
+  color: #000000de;
+  line-height: 1.6;
+}
+
+/* Palette de couleurs professionnelle */
+:root {
+  --linkedin-blue: #0077b5;
+  --linkedin-blue-dark: #005885;
+  --background-main: #ffffff;
+  --background-secondary: #f3f2ef;
+  --border-light: #e6e6e6;
+  --text-primary: #000000de;
+  --text-secondary: #666666;
+  --success-green: #057642;
+  --warning-orange: #915907;
+  --error-red: #cc1016;
+}
+
+/* Container principal épuré */
+.demo-container {
+  background: var(--background-main);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-light);
+}
+
+/* Headers professionnels */
+.professional-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.professional-header h1 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.professional-header .subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  font-weight: 400;
+}
+
+/* Sections pédagogiques */
+.learning-section {
+  background: var(--background-main);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.learning-section h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-left: 3px solid var(--linkedin-blue);
+  padding-left: 0.75rem;
+}
+
+/* Messages d'information pédagogiques */
+.info-pedagogy {
+  background: #f0f7ff;
+  border: 1px solid #bee5eb;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.info-pedagogy .title {
+  color: var(--linkedin-blue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.info-pedagogy .description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Boutons professionnels */
+.btn-professional {
+  background: var(--linkedin-blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-professional:hover {
+  background: var(--linkedin-blue-dark);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--linkedin-blue);
+  border: 1px solid var(--linkedin-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--linkedin-blue);
+  color: white;
+}
+
+/* Code examples */
+.code-example {
+  background: #f8f9fa;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin: 1rem 0;
+}
+
+/* Explanations progressives */
+.step-explanation {
+  border-left: 2px solid var(--linkedin-blue);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.step-number {
+  background: var(--linkedin-blue);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+/* Navigation simplifiée */
+.simple-nav {
+  background: var(--background-main);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1rem 0;
+}
+
+.nav-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  margin: 0 0.25rem;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  background: #f0f7ff;
+  color: var(--linkedin-blue);
+}
+
+.nav-item.active {
+  background: var(--linkedin-blue);
+  color: white;
+}
+
+/* Suppression des animations excessives */
+* {
+  animation: none !important;
+  transition-duration: 0.2s !important;
+}
+
+/* States visuels simples */
+.state-display {
+  background: #f8f9fa;
+  border: 1px solid var(--border-light);
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.state-value {
+  font-weight: 600;
+  color: var(--linkedin-blue);
+  font-size: 1.2rem;
+}
+
+/* Layout responsive simple */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .demo-container {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Focus sur l'apprentissage */
+.learning-objective {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.learning-objective .title {
+  color: var(--warning-orange);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Suppression des effets visuels distrayants */
+.ui.segment {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+}
+
+.ui.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Menu épuré */
+.ui.menu {
+  background: var(--background-main) !important;
+  border: 1px solid var(--border-light) !important;
+  box-shadow: none !important;
+}
+
+.ui.menu .item {
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+}
+
+.ui.menu .item:hover {
+  background: #f0f7ff !important;
+  color: var(--linkedin-blue) !important;
+}
